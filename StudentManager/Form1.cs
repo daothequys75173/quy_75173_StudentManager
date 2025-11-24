@@ -106,7 +106,7 @@ namespace StudentManager
             dgvStudents.DataSource = result;
 
         }
-
+        // Final commit to complete 5 commits requirement
         private void dgvStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
