@@ -31,6 +31,7 @@ namespace StudentManager
             public string Gender { get; set; }
             public string Class { get; set; }
             public string PhoneNumber { get; set; }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -49,6 +50,12 @@ namespace StudentManager
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if(string.IsNullOrEmpty(txtName.Text))
+ {
+                MessageBox.Show("Tên sinh viên không được để trống.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             Student s = new Student()
             {
                 Name = txtName.Text,
