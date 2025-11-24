@@ -67,7 +67,7 @@ namespace StudentManager
 
             dgvStudents.DataSource = null;
             dgvStudents.DataSource = students;
-
+            MessageBox.Show("Thêm sinh viên thành công!");
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -81,6 +81,7 @@ namespace StudentManager
                 dgvStudents.DataSource = null;
                 dgvStudents.DataSource = students;
             }
+            MessageBox.Show("Cập nhật sinh viên thành công!");
 
         }
 
@@ -93,6 +94,7 @@ namespace StudentManager
                 dgvStudents.DataSource = null;
                 dgvStudents.DataSource = students;
             }
+            MessageBox.Show("Xóa sinh viên thành công!");
 
         }
 
