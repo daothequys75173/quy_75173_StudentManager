@@ -1,0 +1,13 @@
+#visual Studio
+.vs/
+bin/
+obj/
+*.ures
+*.suo
+
+# NuGet
+packages
+
+# Logs
+*.log
+.cache
